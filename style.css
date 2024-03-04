@@ -1,0 +1,193 @@
+ /* The switch - the box around the slider */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
+
+  .container {
+    display: flex;
+    justify-content: center; /* Horizontally center align */
+    align-items: center; /* Vertically center align */
+    height: 40vh; /* Adjust as needed */
+  }
+  .ctn{
+    background-color:black; /* Background color of the box */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 8px; /* Border radius for rounded corners */
+    width: 400px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Horizontally center align content */
+    align-items: center; /* Vertically center align content */
+    justify-content: space-between; 
+    border: 6px solid rgba(42, 83, 165, 0.755);
+  border-radius: 15px;
+  }
+  button
+  {
+    width: 100px; /* Set your desired width */
+  height: 50px; /* Set your desired height */
+  font-size: 20px;
+  border: 4px solid ;
+  border-radius: 15px;
+  }
+ 
+
+  
+ .heading {
+    display: flex;
+    justify-content: center; /* Horizontally center align */
+    align-items: center; /* Vertically center align */
+    height: 30vh; /* Adjust as needed */
+  }
+ 
+
+
+/*PLAYING ANIMATION*/
+.loading-wave {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .loading-bar {
+    width: 20px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #3498db;
+    border-radius: 5px;
+    animation: loading-wave-animation 1s ease-in-out infinite;
+  }
+  
+  .loading-bar:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .loading-bar:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  .loading-bar:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+
+  .loading-bar:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  
+  .loading-bar:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  
+  .loading-bar:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  .loading-bar:nth-child(8) {
+    animation-delay: 0.7s;
+  }
+
+  .loading-bar:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+  
+  .loading-bar:nth-child(10) {
+    animation-delay: 0.9s;
+  }
+  
+  .loading-bar:nth-child(11) {
+    animation-delay: 1.0s;}
+
+    .loading-bar:nth-child(12) {
+        animation-delay: 1.1s;
+      }
+    
+      .loading-bar:nth-child(13) {
+        animation-delay: 1.2s;
+      }
+      
+      .loading-bar:nth-child(14) {
+        animation-delay: 1.3s;
+      }
+      
+      .loading-bar:nth-child(15) {
+        animation-delay: 1.4s;}
+  
+          
+          
+         
+            
+             
+  @keyframes loading-wave-animation {
+    0% {
+      height: 10px;
+    }
+  
+    50% {
+      height: 50px;
+    }
+  
+    100% {
+      height: 10px;
+    }
+  }
+  
